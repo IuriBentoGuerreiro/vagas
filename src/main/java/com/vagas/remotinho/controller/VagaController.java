@@ -43,7 +43,7 @@ public class VagaController {
     @Operation(summary = "buscar vagas por localização")
     @GetMapping("procurar/localização")
     @ResponseStatus(HttpStatus.OK)
-    public List<Vaga> filtrarPorLocalizacao(String localizacao){
+    public List<Vaga> filtrarPorLocalizacao(@RequestParam String localizacao){
         return vagaService.filtrarPorLocalizacao(localizacao);
     }
 
