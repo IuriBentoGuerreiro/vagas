@@ -5,6 +5,7 @@ import com.vagas.remotinho.model.Vaga;
 import com.vagas.remotinho.service.VagaService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
@@ -22,7 +23,7 @@ public class VagaController {
     @Operation(summary = "salvar vaga")
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public Vaga salvar(@RequestBody VagaRequest vagaRequest){
+    public Vaga salvar(@Valid @RequestBody VagaRequest vagaRequest){
         return vagaService.salvar(vagaRequest);
     }
 

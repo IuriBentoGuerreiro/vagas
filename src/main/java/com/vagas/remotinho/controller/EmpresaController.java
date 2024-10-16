@@ -6,6 +6,7 @@ import com.vagas.remotinho.model.Vaga;
 import com.vagas.remotinho.service.EmpresaService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
@@ -23,7 +24,7 @@ public class EmpresaController {
     @Operation(summary = "salvar empresa")
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public Empresa salvar(@RequestBody EmpresaRequest empresaRequest){
+    public Empresa salvar(@Valid @RequestBody EmpresaRequest empresaRequest){
         return empresaService.salvar(empresaRequest);
     }
 
