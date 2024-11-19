@@ -1,6 +1,6 @@
-package com.vagas.remotinho.repository;
+package com.vagas.iuri.repository;
 
-import com.vagas.remotinho.model.Vaga;
+import com.vagas.iuri.model.Vaga;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

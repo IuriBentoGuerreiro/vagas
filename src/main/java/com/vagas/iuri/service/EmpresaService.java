@@ -1,9 +1,9 @@
-package com.vagas.remotinho.service;
+package com.vagas.iuri.service;
 
-import com.vagas.remotinho.dto.EmpresaRequest;
-import com.vagas.remotinho.model.Empresa;
-import com.vagas.remotinho.model.Vaga;
-import com.vagas.remotinho.repository.EmpresaRepository;
+import com.vagas.iuri.dto.EmpresaRequest;
+import com.vagas.iuri.model.Empresa;
+import com.vagas.iuri.model.Vaga;
+import com.vagas.iuri.repository.EmpresaRepository;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

@@ -1,9 +1,9 @@
-package com.vagas.remotinho.controller;
+package com.vagas.iuri.controller;
 
-import com.vagas.remotinho.dto.EmpresaRequest;
-import com.vagas.remotinho.model.Empresa;
-import com.vagas.remotinho.model.Vaga;
-import com.vagas.remotinho.service.EmpresaService;
+import com.vagas.iuri.dto.EmpresaRequest;
+import com.vagas.iuri.model.Empresa;
+import com.vagas.iuri.model.Vaga;
+import com.vagas.iuri.service.EmpresaService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;

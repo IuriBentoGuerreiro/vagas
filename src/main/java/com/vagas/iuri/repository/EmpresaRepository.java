@@ -1,6 +1,6 @@
-package com.vagas.remotinho.repository;
+package com.vagas.iuri.repository;
 
-import com.vagas.remotinho.model.Empresa;
+import com.vagas.iuri.model.Empresa;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 

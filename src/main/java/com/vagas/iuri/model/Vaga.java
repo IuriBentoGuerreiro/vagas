@@ -1,4 +1,4 @@
-package com.vagas.remotinho.model;
+package com.vagas.iuri.model;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

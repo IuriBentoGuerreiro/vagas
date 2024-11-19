@@ -1,4 +1,4 @@
-package com.vagas.remotinho.dto;
+package com.vagas.iuri.dto;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;

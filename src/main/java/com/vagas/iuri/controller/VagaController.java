@@ -1,8 +1,8 @@
-package com.vagas.remotinho.controller;
+package com.vagas.iuri.controller;
 
-import com.vagas.remotinho.dto.VagaRequest;
-import com.vagas.remotinho.model.Vaga;
-import com.vagas.remotinho.service.VagaService;
+import com.vagas.iuri.dto.VagaRequest;
+import com.vagas.iuri.model.Vaga;
+import com.vagas.iuri.service.VagaService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
@@ -37,12 +37,12 @@ public class VagaController {
     @Operation(summary = "buscar vaga por id")
     @GetMapping("{id}")
     @ResponseStatus(HttpStatus.OK)
-    public Vaga pegarPorId(Integer id){
+    public Vaga pegarPorId(@PathVariable Integer id){
         return vagaService.pegarPorId(id);
     }
 
     @Operation(summary = "buscar vagas por localização")
-    @GetMapping("procurar/localização")
+    @GetMapping("procurar/localizacao")
     @ResponseStatus(HttpStatus.OK)
     public List<Vaga> filtrarPorLocalizacao(@RequestParam String localizacao){
         return vagaService.filtrarPorLocalizacao(localizacao);
@@ -51,7 +51,7 @@ public class VagaController {
     @Operation(summary = "buscar vagas por cargo")
     @GetMapping("procurar/cargo")
     @ResponseStatus(HttpStatus.OK)
-    public List<Vaga> filtrarPorCargo(String cargo){
+    public List<Vaga> filtrarPorCargo(@RequestParam String cargo){
         return vagaService.filtrarPorCargo(cargo);
     }
 }

@@ -1,8 +1,8 @@
-package com.vagas.remotinho.service;
+package com.vagas.iuri.service;
 
-import com.vagas.remotinho.dto.VagaRequest;
-import com.vagas.remotinho.model.Vaga;
-import com.vagas.remotinho.repository.VagaRepository;
+import com.vagas.iuri.dto.VagaRequest;
+import com.vagas.iuri.model.Vaga;
+import com.vagas.iuri.repository.VagaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.webjars.NotFoundException;
